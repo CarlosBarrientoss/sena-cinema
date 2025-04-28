@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SENA-CINEMA · Reserva de butacas</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.6.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-XXXXX"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Cabecera con landmark header -->
+  <header role="banner">
+    <h1>SENA-CINEMA</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main role="main" class="container">
+
+    <!-- Sección pantalla -->
+    <section class="screen" role="region" aria-label="Pantalla del cine"></section>
+
+    <!-- Sección de butacas -->
+    <section class="seating" aria-labelledby="seating-title">
+      <h2 id="seating-title" class="visually-hidden">Selección de butacas</h2>
+
+      <!-- Fila 1 completa -->
+      <div class="seat-row d-flex justify-content-center align-items-center" role="group" aria-labelledby="row1-label">
+        <span id="row1-label" class="row-label">Fila 1</span>
+        <!-- Asientos 1–6 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 1, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 2, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 3, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 4, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 5, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 6, disponible"></button>
+        <!-- Asientos 7–8 ocupados -->
+        <button type="button" class="seat occupied" disabled aria-label="Fila 1, asiento 7, ocupado"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 1, asiento 8, ocupado"></button>
+        <!-- Asientos 9–14 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 9, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 10, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 11, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 12, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 13, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 1, asiento 14, disponible"></button>
+      </div>
+
+      <!-- Fila 2 completa -->
+      <div class="seat-row d-flex justify-content-center align-items-center" role="group" aria-labelledby="row2-label">
+        <span id="row2-label" class="row-label">Fila 2</span>
+        <!-- Asientos 1–2 ocupados -->
+        <button type="button" class="seat occupied" disabled aria-label="Fila 2, asiento 1, ocupado"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 2, asiento 2, ocupado"></button>
+        <!-- Asientos 3–14 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 3, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 4, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 5, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 6, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 7, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 8, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 9, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 10, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 11, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 12, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 13, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 2, asiento 14, disponible"></button>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="seat-row d-flex justify-content-center align-items-center" role="group" aria-labelledby="row3-label">
+        <span id="row3-label" class="row-label">Fila 3</span>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 1, disponible"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 3, asiento 2, ocupado"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 3, asiento 3, ocupado"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 4, disponible"></button>
+        <!-- Asientos 5–14 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 5, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 6, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 7, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 8, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 9, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 10, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 11, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 12, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 13, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 3, asiento 14, disponible"></button>
+      </div>
+
+      <!-- Fila 4 -->
+      <div class="seat-row d-flex justify-content-center align-items-center" role="group" aria-labelledby="row4-label">
+        <span id="row4-label" class="row-label">Fila 4</span>
+        <!-- Asientos 1–3 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 1, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 2, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 3, disponible"></button>
+        <!-- Asientos 4–5 ocupados -->
+        <button type="button" class="seat occupied" disabled aria-label="Fila 4, asiento 4, ocupado"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 4, asiento 5, ocupado"></button>
+        <!-- Asientos 6–14 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 6, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 7, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 8, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 9, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 10, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 11, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 12, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 13, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 4, asiento 14, disponible"></button>
+      </div>
+
+      <!-- Fila 5 -->
+      <div class="seat-row d-flex justify-content-center align-items-center" role="group" aria-labelledby="row5-label">
+        <span id="row5-label" class="row-label">Fila 5</span>
+        <!-- Asientos 1–2 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 1, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 2, disponible"></button>
+        <!-- Asientos 3–4 ocupados -->
+        <button type="button" class="seat occupied" disabled aria-label="Fila 5, asiento 3, ocupado"></button>
+        <button type="button" class="seat occupied" disabled aria-label="Fila 5, asiento 4, ocupado"></button>
+        <!-- Asientos 5–14 disponibles -->
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 5, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 6, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 7, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 8, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 9, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 10, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 11, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 12, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 13, disponible"></button>
+        <button type="button" class="seat available" aria-label="Fila 5, asiento 14, disponible"></button>
+      </div>
+
+    </section>
+
+    <!-- Formulario accesible -->
+    <section class="reserve-form" aria-labelledby="reserve-form-title">
+      <h2 id="reserve-form-title" class="visually-hidden">Formulario de reserva</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Indica cuántos asientos quieres reservar</legend>
+          <label for="numAsientos" class="visually-hidden">Número de asientos</label>
+          <input
+            type="number"
+            id="numAsientos"
+            name="numAsientos"
+            min="1"
+            class="form-control d-inline-block"
+            aria-required="true"
+            placeholder="N.º asientos"
+          />
+        </fieldset>
+        <button type="submit" class="btn btn-warning mt-3">
+          Confirmar Reserva
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer con landmark footer -->
+  <footer class="cinema-footer" role="contentinfo">
+    <address>
+      <strong>Cine SENA-CINEMA</strong><br />
+       Av. 5, Barrio Pescadero, Cúcuta, Norte de Santander<br />
+      <a href="tel:+34941209743">Teléfono: 3106067414</a><br />
+      <a href="mailto:cinefullstack@senacinema.com">cinefullstack@senacinema.com</a>
+    </address>
+  </footer>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-XXXXX"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
