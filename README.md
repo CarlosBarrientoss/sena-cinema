@@ -9,8 +9,10 @@
    Abre tu terminal y sitúate en la carpeta donde están tus archivos HTML y CSS:
    cd /ruta/a/tu/proyecto
    Si aún no tienes Git configurado a nivel global, primero define tu nombre y correo:
+    ```
    git config --global user.name "Tu Nombre"
    git config --global user.email "tu@correo.com"
+    ```
 
 # Inicializa el repositorio y haz el primer commit
    1. Inicializas un repositorio Git en tu carpeta
